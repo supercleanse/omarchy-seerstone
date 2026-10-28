@@ -1,0 +1,5 @@
+#!/bin/bash
+# Launch Seerstone from its project folder (works from any cwd, via a symlink too).
+here="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+export PYTHONPATH="$here${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m seerstone "$@"

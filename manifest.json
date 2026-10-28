@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "supercleanse.seerstone",
+  "name": "Seerstone",
+  "version": "1.0.0",
+  "author": "Blair Williams",
+  "license": "MIT",
+  "description": "A fast media browser for Omarchy: open a folder and flip through its images, PDFs, audio and video from a compact sidebar. Zoom, rotate and save, export to other formats, play and scrub with frame-exact seeking, step video frame by frame, and pin notes to a moment, frame, page or picture. Notes live beside each file as a plain Markdown checklist, ready to hand to an AI. Adds a bar button that opens Seerstone.",
+  "homepage": "https://github.com/SuperCleanse/omarchy-seerstone",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "SeerstoneWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Seerstone",
+    "description": "Opens Seerstone, the media browser. Until Seerstone is installed, it runs the installer in a terminal.",
+    "category": "Media",
+    "aliases": [
+      "seerstone",
+      "media",
+      "viewer",
+      "image",
+      "photo",
+      "pdf",
+      "video",
+      "audio",
+      "player",
+      "browser"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
